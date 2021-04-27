@@ -1,0 +1,117 @@
+/*Imports*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+/*Full page*/
+html{
+  scroll-behavior: smooth;
+}
+body{
+  min-width: 260px;
+  color: #2d3436;
+  background-color: #dfe6e9;
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.6;
+}
+header{
+  color: #d63031;
+  margin: 10px;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: thin;
+}
+code{
+  display: block;
+  line-height: 2;
+  background-color: #636e72;
+  color: #dfe6e9;
+  font-size: 1.1em;
+  padding: 15px;
+  margin: 10px;
+  border-left: 5px solid #d63031;
+}
+
+/*Navigation sidebar*/
+#navbar{
+  position: fixed;
+  min-width: 260px;
+  top: 0px;
+  left: 0px;
+  width: 270px;
+  height: 100%;
+  border-right: solid;
+  border-color: rgba(0, 22, 22, 0.4);
+  background-color: #636e72;
+}
+#navbar header{
+  color: #dfe6e9;
+}
+#navbar ul{
+  height: 88%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border-top: 3px solid rgba(0, 22, 22, 0.4);
+}
+#navbar li{
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+#navbar a{
+  display: block;
+  padding: 10px 30px;
+  color: #dfe6e9;
+  text-decoration: none;
+  cursor: pointer;
+}
+#navbar a:hover{
+  border-left: 7px solid #d63031;
+}
+
+/*Main content*/
+#main-doc header{
+  text-align: left;
+  margin: 0px;
+}
+#main-doc{
+  position: absolute;
+  margin-left: 290px;
+  padding: 20px;
+  margin-bottom: 110px;
+}
+#main-doc li{
+  color: #d63031;
+}
+#main-doc li span{ 
+  color: #2d3436;
+}
+#schedule{
+  padding: 10px;
+  margin: 10px;
+  padding-left: 40px;
+  background-color: #fab1a0;
+  border-radius: 5px;
+}
+
+/*Media queries*/
+@media only screen and (max-width: 815px) {
+  #navbar ul {
+    height: 207px;
+  }
+  #navbar {
+    position: absolute;
+    top: 0;
+    padding-bottom: 7px;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+    border-bottom: 3px solid;
+  }
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 270px;
+  }
+}
